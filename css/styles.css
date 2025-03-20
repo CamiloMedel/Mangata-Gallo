@@ -75,7 +75,7 @@ article {
 
 /*-promotional*/
 #promotional-banner {
-    background-image: url(../promotional.jpg);
+    background-image: url(../Assets/promotional.jpg);
     background-position: 50% 45%;
     min-height: 350px;
     max-height: 600px;
