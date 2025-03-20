@@ -1,0 +1,173 @@
+body {
+    font-family:  Garamond, serif;
+    margin: 2rem 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/*header*/
+header {
+    width: 100%;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 60vw;
+    min-width: 400px;
+}
+
+/*navigation bar*/
+nav {
+    background-color: black;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5rem;
+    border: 1px black solid;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 5vw;
+}
+
+nav li:hover {
+    background-color: white;
+    color: black;
+}
+
+nav li:hover a{
+    color: black;
+}
+
+/*main*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+}
+
+/*-promotional*/
+#promotional-banner {
+    background-image: url(../promotional.jpg);
+    background-position: 50% 45%;
+    min-height: 350px;
+    max-height: 600px;
+    min-width: 400px;
+    margin-bottom: 45px;
+}
+
+#promotional-banner > article {
+    flex: .5;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px 40px;
+}
+
+#promotional-banner > article > h1 {
+    margin-bottom: 10px;
+}
+
+/*-store info*/
+#store-info {
+    margin-bottom: 45px;
+}
+
+#store-info article {
+    min-width: 300px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+#store-info img {
+    display: block;
+    height: 40vh;
+    width: 100%;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+#new-photo {
+    filter: grayscale(1.0);
+    object-position: 30% 80%;
+    object-fit: cover;
+}
+
+#ring-photo {
+    object-fit: none;
+    object-position: 30% 40%;
+}
+
+#store-info  ul {
+    list-style: none;
+    text-align: left;
+}
+
+.redirection-btn {
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border: black solid 1px;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    text-align: center;
+}
+
+.redirection-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    border-top: black solid 8px;
+    padding-top: 20px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer > div > img {
+    width: 10vw;
+}
+
+footer > div > p {
+    text-align: right;
+}
+
+/*margins are removed when screen size is small*/
+@media (max-width: 683px){
+    body {
+        margin: 1rem 0;
+    }
+}
